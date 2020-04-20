@@ -20,6 +20,7 @@ namespace Poker.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 

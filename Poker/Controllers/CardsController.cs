@@ -17,20 +17,32 @@ namespace Poker.Controllers
             var client = new HttpClient();
             
             client.BaseAddress = new Uri("https://deckofcardsapi.com");
-
+            client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; GrandCircus/1.0)");
 
             var response = await client.GetAsync("api/deck/new/shuffle/?deck_count=1");
 
             
-            var deck = await response.Content.ReadAsAsync<Deck>();
+            var deck = await response.Content.ReadAsAsync<DeckData>();
             //var deck_id = deck.Data.Deck_Id;
-
+                        
             return View(deck);
         }
 
-        public IActionResult Draw()
+        public async Task<IActionResult> Draw(DeckData deck)
         {
-            return View();
+            string deckId = deck.Id;
+            var client = new HttpClient();
+            client.BaseAddress = new Uri("https://deckofcardsapi.com");
+            client.DefaultRequestHeaders.UserAgent.ParseAdd("Mozilla/5.0 (compatible; GrandCircus/1.0)");
+
+            
+            var response = await client.GetAsync($"api/deck/{deckId}/draw/?count=5");
+
+
+            var hand = await response.Content.ReadAsAsync<Deck>();
+            //var deck_id = deck.Data.Deck_Id;
+
+            return View(hand);
         }
     }
 }

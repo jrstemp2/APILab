@@ -7,24 +7,26 @@ namespace Poker.Models
 {
     public class Deck
     {
-        public DeckData Data { get; set; }
-        public DeckHand Hand { get; set; }
+        
+        public string Deck_Id{ get; set; }
+        public Card[] Cards { get; set; }
     }
 
     public class DeckData
     {
-        public string Success { get; set; }
+        public string Id { get; set; }
+        public bool Success { get; set; }
         public string Deck_Id { get; set; }
-        public string Shuffled { get; set; }
-        public string Remaining { get; set; }
+        public bool Shuffled { get; set; }
+        public int Remaining { get; set; }
     }
-    public class DeckHand 
+    public class Card 
     {
-        public string Image { get; set; }
-        public string Success { get; set; }
+        public Uri Image { get; set; }
         public string Value { get; set; }
         public string Suit { get; set; }
         
+
     }
 
 }

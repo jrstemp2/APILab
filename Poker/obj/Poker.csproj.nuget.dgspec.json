@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JStempowski-\\source\\repos\\Poker\\Poker\\Poker.csproj": {}
+    "C:\\Users\\JSTEMPOWSKI\\OneDrive - Knex\\Desktop\\Poker\\Poker\\Poker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JStempowski-\\source\\repos\\Poker\\Poker\\Poker.csproj": {
+    "C:\\Users\\JSTEMPOWSKI\\OneDrive - Knex\\Desktop\\Poker\\Poker\\Poker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JStempowski-\\source\\repos\\Poker\\Poker\\Poker.csproj",
+        "projectUniqueName": "C:\\Users\\JSTEMPOWSKI\\OneDrive - Knex\\Desktop\\Poker\\Poker\\Poker.csproj",
         "projectName": "Poker",
-        "projectPath": "C:\\Users\\JStempowski-\\source\\repos\\Poker\\Poker\\Poker.csproj",
+        "projectPath": "C:\\Users\\JSTEMPOWSKI\\OneDrive - Knex\\Desktop\\Poker\\Poker\\Poker.csproj",
         "packagesPath": "C:\\Users\\JStempowski-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JStempowski-\\source\\repos\\Poker\\Poker\\obj\\",
+        "outputPath": "C:\\Users\\JSTEMPOWSKI\\OneDrive - Knex\\Desktop\\Poker\\Poker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

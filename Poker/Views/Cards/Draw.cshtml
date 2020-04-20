@@ -1,15 +1,43 @@
 ﻿@model Deck
 @{
     ViewData["Title"] = "Draw";
+    int numItems = Model.Cards.Length;
 }
 
 <h1>And Here's Your Hand!</h1>
 
+<table>
+    <tr>
+        <th>Card 1</th>
+        <th>Card 2</th>
+        <th>Card 3</th>
+        <th>Card 4</th>
+        <th>Card 5</th>
+    </tr>
+    <tr>
+        @for (int i = 0; i < numItems; i++)
+        {
+
+            <td>
+                <img src="@Model.Cards[i].Image" />"
+                <br />
+                <strong>@Model.Cards[i].Value of @Model.Cards[i].Suit</strong>
+            </td>
+
+        }
+    </tr>
+    
+    </table>
+
+
+
 @*<ul>
-    @for (int i = 0; i < 5; i++)
+    @for (int i = 0; i < numItems; i++)    
     {
     <li>
-        <br /><img src="@Model.Data.IconLink[i]" />
+        <img src="@Model.Cards[i].Image" />"
+        <br />
+        @Model.Cards[i].Value of @Model.Cards[i].Suit
        
     </li>
 
